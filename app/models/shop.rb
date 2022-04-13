@@ -1,2 +1,5 @@
 class Shop < ApplicationRecord
-end
+    has_many :addresses, as: :addressable
+    has_many :foods
+ end
+ 
